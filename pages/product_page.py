@@ -20,7 +20,7 @@ class ProductPage(BasePage):
         assert product_price == product_price_alert, "Should be same value in product price"
         print('Name of price and alert are the same!🎉')
 
-    def should_not_be_success_message_is_not_present(self):
+    def should_not_be_success_message(self):
         assert self.is_not_element_present(*ProductPageLocators.PRODUCT_NAME_ALERT), \
        "Success message is presented, but should not be"
 
